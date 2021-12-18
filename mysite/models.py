@@ -26,7 +26,16 @@ class Member(models.Model):
     ECO = 10
     PMC = 11
     WC = 12
-    EXM = 13
+    
+    TR = 13
+    MGC = 14
+    SMH = 15
+    SMC = 16
+    CC = 17
+    MC = 18
+    DMH = 19
+    WEBC = 20
+    EXM = 21
 
     POST_CHOICES = [
         (CON, "Convener"),
@@ -42,7 +51,15 @@ class Member(models.Model):
         (ECO, "Events Co-ordinator"),
         (PMC, "Publicity and Media Co-ordinator"),
         (WC, "Workshops Co-ordinator"),
-        (EXM, "Executive Member")
+        (EXM, "Executive Member"),
+        (MGC, "Motion Graphics Coordinator"),
+        (TR, "Treasurer"),
+        (SMH,"Social Media Head"),
+        (DMH,"Digital Media Head"),
+        (CC,"Content Co-ordinator"),
+        (MC,"Marketing Co-ordinator"),
+        (WEBC,"Website Co-ordinator"),
+        (SMC,"Social Media Co-ordinator")
     ]
 
     CORE = "Core"
