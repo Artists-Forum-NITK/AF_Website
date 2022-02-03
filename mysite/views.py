@@ -104,7 +104,7 @@ def check_back_later(request, t):
         if t == 'recs404':
             disp_text = 'Recruitments'
             date = "August"
-        
+
     context = {
         'disp_text': disp_text,
         'date': date
@@ -163,3 +163,7 @@ def team(request):
         'web_members' : web_members
     }
     return render(request, 'team.html', context=context)
+
+
+def error_404(request,exception):
+    return render(request,'error404.html')

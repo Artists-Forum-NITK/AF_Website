@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div id="main">
+    <div class="breadcrumb" style="margin: 70px 0px 70px 0px;"><!-- *BreadCrumb Starts here** -->
+        <div class="container">
+            <h2 style="font-size: 80px;">Uh Oh! Page not found</h2>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+                <a href="{% url 'index' %}"><h2>Home Page</h2></a>
+    </div>
+</div>
+{% endblock content %}
