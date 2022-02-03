@@ -10,6 +10,7 @@ from account.templates import *
 admin.site.site_title = "Artists' Forum Administrator"
 admin.site.index_title = "Admin Dashboard"
 admin.site.site_header = "Artists' Forum Administrator"
+
 urlpatterns = [
     #account urls
     path('register/', registration_view, name = 'register'),
@@ -43,3 +44,6 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = "mysite.views.error_404"
